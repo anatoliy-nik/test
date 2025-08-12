@@ -1,0 +1,47 @@
+@import '_header.scss';
+
+$default-color: pink;
+$second-color: yellow;
+
+%bg {
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+body {
+    background-color: $second-color;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.wrapper {
+    width: 500px;
+    height: 500px;
+    border: 1px solid grey;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.menu {
+    display: flex;
+    &__item {
+        margin-right: 5px;
+    }
+    &__link {
+        padding: 10px;
+    }
+}
+
+.about {
+    background-image: url();
+    @extend %bg;
+}
+
+.team {
+    background-image: url();
+    @extend %bg;
+}
