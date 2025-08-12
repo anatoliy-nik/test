@@ -26,6 +26,10 @@ body {
     align-items: center;
 }
 
+h1 {
+    font-style: italic;
+}
+
 .menu {
     display: flex;
     &__item {
